@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    PYTHON_PATH = "/usr/bin/python3"
+    }
   stages {
     stage("build") {
         steps{
@@ -14,6 +17,7 @@ pipeline {
     stage("deploy") {
       steps {
     echo 'Baba is deploying the application...'
+    $PYTHON_PATH --version
         }
     }
   }
