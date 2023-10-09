@@ -17,7 +17,6 @@ pipeline {
     stage("deploy") {
       steps {
     echo 'Baba is deploying the application...'
-    $PYTHON_PATH --version
         }
     }
   }
