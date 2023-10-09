@@ -14,7 +14,7 @@ pipeline {
     stage("deploy") {
       steps {
     echo 'Baba is deploying the application...'
-    sh hello.py
+    sh 'python3 hello.py'
       }
     }
   }
