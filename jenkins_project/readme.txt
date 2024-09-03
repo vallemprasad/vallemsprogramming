@@ -14,11 +14,13 @@ java -jar jenkins.war-httpPort:8080
 3. After installing the plugin, restart Jenkins so that the plugin is ready to use
 
 
-4. Create git hub account
+4. Create git hub account and install git in the machine. As a first time user perform below actions.
 
-Generate Keys at $HOME/.ssh by using command ssh-keygen -t rsa
-
-Add id_rsa.pub content of such a public key to your Github account: click your profile photo -> Settings-> SSH and GPG keys -> New SSH key or Add SSH key
+i. git config --global user.emai "vallemsprogramming@gmail.com"
+ii. git config --global user.name "prasad"
+iii. git remote set-url origin git@github.com:vallemprasad/vallemsprogramming.git
+iv. Generate Keys at $HOME/.ssh by using command ssh-keygen -t rsa
+v. Add id_rsa.pub content of such a public key to your Github account: click your profile photo -> Settings-> SSH and GPG keys -> New SSH key or Add SSH key
 
 5. Copy one of the examples below into your repository and name it Jenkinsfile
 
