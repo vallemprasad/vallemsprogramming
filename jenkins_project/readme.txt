@@ -13,7 +13,14 @@ java -jar jenkins.war-httpPort:8080
 
 3. After installing the plugin, restart Jenkins so that the plugin is ready to use
 
-4. Copy one of the examples below into your repository and name it Jenkinsfile
+
+4. Create git hub account
+
+Generate Keys at $HOME/.ssh by using command ssh-keygen -t rsa
+
+Add id_rsa.pub content of such a public key to your Github account: click your profile photo -> Settings-> SSH and GPG keys -> New SSH key or Add SSH key
+
+5. Copy one of the examples below into your repository and name it Jenkinsfile
 
 
 Jenkinsfile (Declarative Pipeline)
@@ -31,4 +38,4 @@ pipeline {
 }
 
 
-5. Follow the steps https://www.jenkins.io/doc/pipeline/tour/hello-world/
+6. Follow the steps https://www.jenkins.io/doc/pipeline/tour/hello-world/
